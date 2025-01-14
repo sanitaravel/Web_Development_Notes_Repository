@@ -2,7 +2,7 @@
 name: Pull Request Template
 about: Use this template for submitting pull requests related to class notes
 title: ''
-labels: ''
+labels: 'content addition, content correction, formatting, review needed, approved, not approved'
 assignees: ''
 
 ---

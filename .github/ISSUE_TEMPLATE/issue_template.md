@@ -2,7 +2,7 @@
 name: Issue Template
 about: Use this template for reporting issues or suggesting improvements related to class notes
 title: ''
-labels: ''
+labels: 'bug, enhancement, question, discussion, typo, content update, duplicate, invalid, wontfix'
 assignees: ''
 
 ---
