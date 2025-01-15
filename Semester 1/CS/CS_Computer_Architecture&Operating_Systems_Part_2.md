@@ -10,7 +10,7 @@
     3. [Advanced TypeScript Features](#advanced-typescript-features)
         1. [Composing Types with Unions](#composing-types-with-unions)
         2. [Generics](#generics)
-    4. [TypeScript’s Structural Type System](#typescript’s-structural-type-system)
+    4. [TypeScript’s Structural Type System](#typescripts-structural-type-system)
     5. [Key Points](#key-points)
 2. [Search Algorithms](#search-algorithms)
     1. [What Are Search Algorithms?](#what-are-search-algorithms)
@@ -34,7 +34,7 @@
 
 ## TypeScript
 
-TypeScript is a powerful tool that works alongside JavaScript. It offers all the features of JavaScript while adding an extra layer: **TypeScript's type system**. 
+TypeScript is a powerful tool that works alongside JavaScript. It offers all the features of JavaScript while adding an extra layer: **TypeScript's type system**.
 
 ### Why TypeScript?
 
@@ -47,6 +47,7 @@ TypeScript is a powerful tool that works alongside JavaScript. It offers all the
 ### TypeScript Basics
 
 #### Types by Inference
+
 TypeScript often figures out the type of a variable for you. For example:
 
 ```typescript
@@ -56,6 +57,7 @@ let helloWorld = "Hello World"; // TypeScript knows this is a string.
 Here, `helloWorld` is automatically assigned the type `string`. You don’t need to specify it.
 
 #### Defining Types Explicitly
+
 Sometimes, you might want to explicitly define the type of a variable or object. For example:
 
 ```typescript
@@ -81,7 +83,8 @@ const user: User = {
 
 ### Advanced TypeScript Features
 
-##### Composing Types with Unions
+#### Composing Types with Unions
+
 A **union** type allows a variable to have multiple possible types. For example:
 
 ```typescript
@@ -97,7 +100,8 @@ function getLength(obj: string | string[]) {
 }
 ```
 
-##### Generics
+#### Generics
+
 Generics allow you to create reusable components with types:
 
 ```typescript
@@ -149,7 +153,7 @@ Even though `point` is not explicitly declared as a `Point` type, its structure 
 
 ### What Are Search Algorithms?
 
-> 💡 Search algorithms explore a **defined domain** (or **search space**) to find answers. For example, imagine trying to find someone's phone number in a phone book. The search space includes all the entries in the phone book. 
+> 💡 Search algorithms explore a **defined domain** (or **search space**) to find answers. For example, imagine trying to find someone's phone number in a phone book. The search space includes all the entries in the phone book.
 
 Smart search algorithms reduce the search space, narrowing down millions of possibilities into a manageable subset. In our phone book example, the data is one-dimensional and ordered, making it one of the simplest cases to handle.
 
@@ -158,12 +162,15 @@ Search is closely linked to **sorting algorithms** because the way data is struc
 ### Examples of Search Problems
 
 #### Timetable Optimization
+
 A university has many rooms and classes with constraints like professor availability and student schedules. The combinations are vast, making an exhaustive search impractical. Smart algorithms can optimize the allocation of rooms and schedules efficiently.
 
 #### Pathfinding
+
 Route planning, like finding the best path through a city, is a more complex problem. "Best" might mean fastest, least traffic, or a scenic route. Algorithms convert cities into **graphs** (nodes for locations, edges for paths) to create a searchable structure.
 
 #### Integer Factorization
+
 Breaking an integer into prime factors is a key problem in cryptography. For example, RSA encryption keys are products of two large primes. While multiplying two primes is easy, reversing the process is hard because of the vast search space involved.
 
 ### How Do Search Algorithms Work?
@@ -173,7 +180,8 @@ Breaking an integer into prime factors is a key problem in cryptography. For exa
 ### Search Algorithms You Should Know
 
 #### Binary Search
-Binary search is a simple and effective algorithm that works on **ordered data**. 
+
+Binary search is a simple and effective algorithm that works on **ordered data**.
 
 - **Example**: Finding "Eli" in an alphabetically ordered phone book.
   - Open the book to the middle. If you're at "J," ignore everything after it since "E" comes before "J."
@@ -206,14 +214,15 @@ function binarySearch(array, target):
     return -1  // Target not found
 ```
 
-### Key Points:
+#### Key Points
+
 - **Input**: A sorted array and the target element to find.
 - **Process**: Repeatedly divide the array into halves, comparing the middle element to the target.
 - **Output**: The index of the target element, or `-1` if the element is not found.
 
 ## Unit Testing
 
-> 💡 Unit testing involves testing the **smallest piece of code** that can be logically isolated, such as a function, method, or property. 
+> 💡 Unit testing involves testing the **smallest piece of code** that can be logically isolated, such as a function, method, or property.
 
 The key point is isolation: tests should not rely on external systems like databases or networks. Michael Feathers, in *Working Effectively with Legacy Code*, states:  
 > *"If it talks to the database, it talks across the network, it touches the file system, it requires system configuration, or it can't be run at the same time as any other test, it’s not a unit test."*
@@ -223,13 +232,15 @@ Unit testing frameworks like **JUnit**, **TestComplete**, and the original **SUn
 ### What Do Unit Tests Look Like?
 
 A unit test can focus on:
+
 - A **line of code**
 - A **method**
 - A **class**
 
 Smaller tests are generally better since they run faster and provide more granular feedback. For example, consider the following simple function:
 
-#### TypeScript Example:
+#### TypeScript Example
+
 ```typescript
 function divider(a: number, b: number): number {
   return a / b;
@@ -238,7 +249,8 @@ function divider(a: number, b: number): number {
 
 A corresponding unit test written using **Jest** might look like this:
 
-#### Unit Test in TypeScript:
+#### Unit Test in TypeScript
+
 ```typescript
 import { describe, it, expect } from '@jest/globals';
 
@@ -265,6 +277,7 @@ This test suite ensures the function works correctly and handles edge cases. Not
 ### Who Should Create Unit Tests?
 
 Unit testing is often part of the programming phase, handled by the developer who wrote the code. This approach makes sense because the developer:
+
 - Knows how to access the testable components.
 - Can mock objects effectively.
 
@@ -273,7 +286,9 @@ However, unit tests can also be added later to safeguard refactoring or extendin
 ### How Can You Use Unit Tests?
 
 #### Test-Driven Development (TDD)
+
 TDD involves writing tests **before** production code:
+
 1. Write a test.
 2. Write the code to make the test pass.
 3. Refactor the code for clarity or efficiency.
@@ -281,14 +296,17 @@ TDD involves writing tests **before** production code:
 This iterative process ensures clean, well-tested code. While TDD can be challenging to adopt, it fosters better design and confidence in refactoring.
 
 #### Checking Your Work
+
 Writing tests **after** the production code is a more traditional approach but equally valuable. Tests verify that the code works as expected and act as a **change detection system**, alerting you to unintended side effects during development.
 
 #### Code Documentation
+
 Unit tests can serve as **living documentation** by showing how the code is intended to be used. This reduces the need for traditional documentation and helps new developers understand the system.
 
 ### When Should You Avoid Unit Testing?
 
 Unit testing is not always the right tool. For example:
+
 - **Integration tests**: Crossing system boundaries (e.g., databases, APIs) can slow test execution. Specialized integration testing frameworks are better suited for this purpose.
 - **End-to-end tests**: These require careful setup and dependencies, making them unsuitable for unit testing frameworks.
 
