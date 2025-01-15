@@ -12,6 +12,7 @@ If you find any errors or have suggestions for improvements in the class notes, 
 
 1. Fork the repository by clicking the "Fork" button on the top right of the repository page.
 2. Clone your forked repository to your local machine:
+
    ```sh
    git clone https://github.com/your-username/Web-Development-Notes-Repository.git
    ```
@@ -19,6 +20,7 @@ If you find any errors or have suggestions for improvements in the class notes, 
 ### Create a Branch
 
 Create a new branch for your changes:
+
 ```sh
 git checkout -b your-branch-name
 ```
@@ -30,6 +32,7 @@ Make your changes to the notes or documentation. Ensure your changes are clear a
 ### Commit Your Changes
 
 Commit your changes with a clear and concise commit message:
+
 ```sh
 git add .
 git commit -m "Description of your changes"
@@ -38,6 +41,7 @@ git commit -m "Description of your changes"
 ### Push to Your Fork
 
 Push your changes to your forked repository:
+
 ```sh
 git push origin your-branch-name
 ```

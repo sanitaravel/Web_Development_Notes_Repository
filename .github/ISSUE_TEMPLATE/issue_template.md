@@ -20,4 +20,4 @@ A clear and concise description of what you expected to find or how the notes sh
 If applicable, add screenshots to help explain your problem or suggestion.
 
 **Additional context**
-Add any other context about the issue or suggestion here.
+Add any other context about the issue or suggestion here

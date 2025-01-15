@@ -4,11 +4,13 @@ Welcome to the Web Development Notes Repository for the SRH Hochschule Berlin, a
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Folder Structure](#folder-structure)
-- [Resources](#resources)
-- [Contributing](#contributing)
-- [License](#license)
+- [Web Development Notes Repository](#web-development-notes-repository)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Folder Structure](#folder-structure)
+    - [Explanation of Folder Structure](#explanation-of-folder-structure)
+  - [Contributing](#contributing)
+  - [License](#license)
 
 ## Introduction
 
@@ -18,25 +20,28 @@ This repository is maintained by the students of the Web Development course at S
 
 The repository is organized as follows:
 
-```
+```markdown
 /Web-Development-Notes-Repository
+│   CODE_OF_CONDUCT.md
+│   CONTRIBUTING.md
+│   LICENSE
+│   README.md
+|
+├───.github
 │
-├── /Semester 1
-│   └── CS
-│       └── CS_Computer_Architecture&Operating_Systems_Part_1.md
-│
-└── README.md
+└───Semester [number]
+    └─── [course_name]
 ```
 
-### Semester 1
+### Explanation of Folder Structure
 
-Contains notes and resources for the first semester.
-
-Markdown file containing notes on Computer Architecture and Operating Systems, Part 1.
-
-## Resources
-
-A collection of useful resources, such as tutorials, articles, tools, and references, will be listed here to aid in the learning process.
+- **CODE_OF_CONDUCT.md**: Contains the code of conduct for contributors to ensure a respectful and inclusive environment.
+- **CONTRIBUTING.md**: Provides guidelines for contributing to the repository.
+- **LICENSE**: Contains the license information for the repository.
+- **README.md**: The main readme file that provides an overview of the repository.
+- **.github**: Contains GitHub-specific files such as issue and pull request templates.
+- **Semester [number]**: Each semester's folder contains notes and resources for that specific semester.
+  - **[course_name]**: Each course within a semester has its own folder containing notes, assignments, and other relevant materials.
 
 ## Contributing
 
