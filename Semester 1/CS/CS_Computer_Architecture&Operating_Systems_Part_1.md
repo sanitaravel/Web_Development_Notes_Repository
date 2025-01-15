@@ -137,7 +137,7 @@ For these applications, **UDP** is preferred, as it has lower latency and doesn�
 
 **DNS simplifies access to the Internet** by enabling users to type in friendly URLs instead of needing to remember IP addresses.
 
-### 8. Explain the structure (Elements and Roles) of DNS.
+### 8. Explain the structure (Elements and Roles) of DNS
 
 The structure of DNS includes several key elements that work together to resolve domain names:
 
@@ -166,14 +166,14 @@ The structure of DNS includes several key elements that work together to resolve
 
 ## Fundamentals
 
-### 1. Name the two values Boolean Algebra is typically based on.
+### 1. Name the two values Boolean Algebra is typically based on
 
 Boolean Algebra is based on two values:
 
 - **True (1)**
 - **False (0)**
 
-### 2. Explain the Boolean operator OR.
+### 2. Explain the Boolean operator OR
 
 > 💡 The **OR** operator in Boolean Algebra outputs **True (1)** if **at least one** of the inputs is **True (1)**.
 
@@ -196,7 +196,7 @@ For example, in **1011**,
 - MSB = **1** (leftmost)
 - LSB = **1** (rightmost)
 
-### 4. Convert the binary number 1101 into a decimal number (positive integer).
+### 4. Convert the binary number 1101 into a decimal number (positive integer)
 
 To convert binary to decimal:
 
@@ -235,7 +235,7 @@ The remaining bits represent the absolute value of the number in binary.
 
 |    **Advantages:**    |                                               **Disadvantages:**                                               |
 |:---------------------:|:--------------------------------------------------------------------------------------------------------------:|
-| Simple and intuitive. | Arithmetic operations (addition, subtraction) become <br> complex because the sign bit needs special handling. |
+| Simple and intuitive. | Arithmetic operations (addition, subtraction) become  complex because the sign bit needs special handling. |
 
 #### One's Complement
 
@@ -248,7 +248,7 @@ In this method, negative numbers are represented by **inverting all the bits** o
 
 |   **Advantages:**  |                                      **Disadvantages:**                                     |
 |:------------------:|:-------------------------------------------------------------------------------------------:|
-| Simple to compute. | Two representations of zero:<br> **00000000** (positive zero) and **11111111** (negative zero). |
+| Simple to compute. | Two representations of zero:   **00000000** (positive zero) and **11111111** (negative zero). |
 
 #### Two's Complement (Most Common Method)
 
@@ -330,15 +330,15 @@ UTF-8 is better because:
 - Examples of instructions: **ADD (addition), SUB (substract), MOV (copy), JMP (”jump” to a specified location in the code), CMP (compare two values)**.
 - Instruction sets are specific to the CPU architecture (e.g., x86, ARM).
 
-### 2. Explain the difference between a program and a process.
+### 2. Explain the difference between a program and a process
 
-#### Program:
+#### Program
 
 - A static set of instructions written in a programming language.
 - It resides on storage (e.g., a hard disk) as a file.
 - Example: An `.exe` file on Windows or a `.sh` script on Linux.
 
-#### Process:
+#### Process
 
 - A program in **execution**.
 - A process is dynamic and includes the program’s code, allocated resources (e.g., memory, CPU time), and execution state.
@@ -362,7 +362,7 @@ UTF-8 is better because:
 
 #### Examples
 
-**Python**
+##### Python
 
 ```python
 def main():
@@ -372,7 +372,7 @@ if __name__ == "__main__":
     main()
 ```
 
-**C++**
+##### C++
 
 ```cpp
 #include <iostream>
@@ -383,7 +383,7 @@ int main() {
 }
 ```
 
-**Java**
+##### Java
 
 ```java
 public class HelloWorld {
@@ -393,7 +393,7 @@ public class HelloWorld {
 }
 ```
 
-#### Why we use them:
+#### Why we use them
 
 1. Computers only understand binary (machine language), and programming languages provide a more human-readable way to communicate with them.
 2. They increase productivity by offering abstractions for complex operations.
@@ -401,7 +401,7 @@ public class HelloWorld {
 
 ### 5. What is the difference between a compiler and an interpreter?
 
-#### Compiler:
+#### Compiler
 
 - Translates the entire source code into machine code **before execution**.
 - Output: An independent executable file.
@@ -409,7 +409,7 @@ public class HelloWorld {
 - **Advantage:** Faster execution after compilation.
 - **Disadvantage:** Debugging is harder because errors are reported after compilation.
 
-#### Interpreter:
+#### Interpreter
 
 - Translates and executes source code **line by line**.
 - No independent executable file is created.
@@ -417,11 +417,11 @@ public class HelloWorld {
 - **Advantage:** Easier debugging as errors are identified immediately.
 - **Disadvantage:** Slower execution due to real-time interpretation.
 
-### 6. Explain how distributed software systems work in general.
+### 6. Explain how distributed software systems work in general
 
 > 💡 **Distributed software systems** consist of multiple independent components running on different computers (nodes) that work together to achieve a common goal.
 
-#### Key characteristics:
+#### Key characteristics
 
 1. **Resource Sharing:** Nodes share hardware, data, and software resources.
 2. **Communication:** Nodes communicate via a network (e.g., LAN, WAN, the internet).
@@ -461,7 +461,7 @@ Signals can be:
 - **Analog:** Continuous signals that vary over time (e.g., sound waves, radio waves).
 - **Digital:** Discrete signals, usually represented as binary values (0s and 1s).
 
-### 2. Name three mediums we use to transmit signals.
+### 2. Name three mediums we use to transmit signals
 
 1. **Copper Cables** (e.g., twisted pair, coaxial cables): Electrical signals.
 2. **Fiber Optic Cables:** Light signals.
@@ -477,7 +477,7 @@ Yes, the signal transmission method relies on the type of medium because differe
 
 Each medium has distinct properties (e.g., bandwidth, attenuation, noise susceptibility), determining the signal type and transmission method used.
 
-### 4. How do we encode binary data on a binary signal? Describe an exemplary solution.
+### 4. How do we encode binary data on a binary signal? Describe an exemplary solution
 
 To encode binary data on a binary signal, we map binary values (0 and 1) to **specific signal states**.
 
@@ -514,7 +514,7 @@ Binary Data: **101**
 
 **Signal Representation:**
 
-```
+```text
 101 → (High Amplitude) (Low Amplitude) (High Amplitude)
 ```
 
@@ -538,7 +538,7 @@ Binary Data: **101**
 
 **Signal Representation:**
 
-```
+```text
 101 → (High Frequency) (Low Frequency) (High Frequency)
 ```
 
@@ -562,7 +562,7 @@ Binary Data: **101**
 
 **Signal Representation:**
 
-```
+```text
 101 → (Shift Phase) (No Shift) (Shift Phase)
 ```
 
@@ -594,7 +594,7 @@ Wi-Fi and cellular communication (e.g., 4G, 5G) use variations of PSK for effici
 - **Frequency Division Multiplexing (FDM):** Signals occupy separate frequency bands.
 - **Wavelength Division Multiplexing (WDM):** Used in fiber optics, signals are separated by light wavelengths.
 
-### 7. Communication systems rely on networks. Explain why.
+### 7. Communication systems rely on networks. Explain why
 
 Networks enable communication systems to:
 
@@ -682,7 +682,7 @@ An IP packet typically contains:
     - Protocol (specifies the transport layer protocol, e.g., TCP or UDP).
 2. **Payload:** The actual data being transmitted (e.g., part of a file, message, or webpage).
 
-### 5. True or False:
+### 5. True or False
 
 1. **IP ensures all packets reach the receiver.**
 
@@ -714,7 +714,7 @@ Example: You can run a web server locally and access it using `http://127.0.0.1`
 
 ## TCP
 
-### 1. Name four important fields of an IP packet.
+### 1. Name four important fields of an IP packet
 
 An IP packet contains several fields, but four important ones are:
 
@@ -733,7 +733,7 @@ An IP packet contains several fields, but four important ones are:
 
     IPv6 allows a payload size of **4,294,967,295 ($2^{32}$) bytes (4 GB)** through an optional jumbo payload extension, though practical usage is much smaller.
 
-### 3. Explain briefly how reliable transmission works in TCP.
+### 3. Explain briefly how reliable transmission works in TCP
 
 1. **Sequencing**:
 
@@ -835,7 +835,7 @@ In such cases, **UDP** (User Datagram Protocol) is preferred because it is faste
 
 It allows clients (e.g., browsers) to request resources from servers and retrieve them in the form of web pages, images, or other data formats.
 
-#### Key Characteristics:
+#### Key Characteristics
 
 - **Stateless:** Each request-response pair is independent, meaning no memory is retained between interactions.
 - **Extensible:** Supports various methods and headers, making it adaptable for different needs.
@@ -845,17 +845,17 @@ It allows clients (e.g., browsers) to request resources from servers and retriev
 
 > 💡 **Resources** on the web refer to any identifiable item accessible via HTTP, such as web pages, documents, images, or videos.
 
-#### Representation of Resources:
+#### Representation of Resources
 
 - When a resource is requested, the server provides a **representation** or snapshot of it (e.g., a JSON object, an HTML page, or an image file).
 - This concept underpins the **RESTful architecture**, which uses standard HTTP methods to interact with resources.
 
-#### Example:
+#### Example
 
 - A resource could be a user profile at `/users/123`.
 - A GET request retrieves the current representation of the profile, while a PUT request updates it.
 
-### 3. How does HTTP interact with resources? Name the basic HTTP methods.
+### 3. How does HTTP interact with resources? Name the basic HTTP methods
 
 HTTP interacts with resources using **methods** that define the action to be performed:
 
@@ -870,7 +870,7 @@ HTTP interacts with resources using **methods** that define the action to be per
 - **OPTIONS:** Describes the communication options available for a resource.
 - **PATCH:** Applies partial updates to a resource.
 
-#### Example Use Case:
+#### Example Use Case
 
 A form submission might use POST to send data to `/submit`, while a DELETE request to `/posts/1` would remove a blog post.
 
@@ -878,7 +878,7 @@ A form submission might use POST to send data to `/submit`, while a DELETE reque
 
 > 💡 A **URL (Uniform Resource Locator)** specifies the location of a resource on the web and how to access it.
 
-#### Components:
+#### Components
 
 1. **Scheme:** Protocol (e.g., `http`, `https`, `ftp`).
 2. **Host:** Domain name or IP address (e.g., `www.example.com`).
@@ -886,7 +886,7 @@ A form submission might use POST to send data to `/submit`, while a DELETE reque
 4. **Path:** Specifies the resource's location on the server (e.g., `/docs/page`).
 5. **Query String:** Parameters for additional information (e.g., `?id=123&sort=asc`).
 
-#### Example:
+#### Example
 
 `https://www.example.com:443/resources?id=42`
 
@@ -902,20 +902,20 @@ A form submission might use POST to send data to `/submit`, while a DELETE reque
 
 HTTP/2 improves performance, security, and efficiency over HTTP/1.1.
 
-#### Key Features:
+#### Key Features
 
 1. **Request Pipelining:** Multiple requests are sent over a single connection without waiting for responses.
 2. **Server Push:** Servers can proactively send resources to the client without explicit requests (e.g., sending CSS for a page).
 3. **Binary Protocol:** Data is encoded in binary, which is more efficient than HTTP/1.1’s text-based format.
 4. **Header Compression:** Reduces overhead by compressing header data.
 
-#### Benefits:
+#### Benefits
 
 - Faster page loads.
 - Reduced latency for complex applications.
 - Improved support for modern web features like real-time data updates.
 
-### 6. Explain the structure of an HTTP message.
+### 6. Explain the structure of an HTTP message
 
 An HTTP message consists of:
 
@@ -997,7 +997,7 @@ These codes indicate that the server failed to fulfill a valid request.
 
 > 💡 Character encoding ensures text data is correctly interpreted, **especially** for non-ASCII characters or symbols.
 
-#### Examples:
+#### Examples
 
 - UTF-8 supports characters from multiple languages (e.g., `ä` is encoded as `%C3%A4`).
 - Reserved characters like `&` or `?` are percent-encoded to avoid conflicts.
@@ -1007,7 +1007,7 @@ These codes indicate that the server failed to fulfill a valid request.
 - **Proxies:** Act on behalf of clients to improve performance (e.g., caching responses) or provide security (e.g., hiding IP addresses).
 - **Gateways:** Intermediaries on the server side that encapsulate services or enforce security measures.
 
-#### Example:
+#### Example
 
 A proxy might cache an image for faster subsequent requests, while a gateway could validate user authentication.
 
@@ -1016,7 +1016,7 @@ A proxy might cache an image for faster subsequent requests, while a gateway cou
 - **Content-Type:** Informs the receiver about the data format (e.g., `application/json`, `text/html`).
 - **Content-Length:** Specifies the size of the message body in bytes, ensuring the receiver knows where the message ends.
 
-#### Example:
+#### Example
 
 A `Content-Type: application/json` header signals the server to interpret the body as JSON data.
 
@@ -1024,13 +1024,13 @@ A `Content-Type: application/json` header signals the server to interpret the bo
 
 > 💡 **HTML** organizes web content into semantic elements using tags (e.g., `<h1>` for headers, `<p>` for paragraphs).
 
-#### Key Purposes:
+#### Key Purposes
 
 - Define document structure.
 - Embed multimedia elements like images and videos.
 - Provide hyperlinks for navigation.
 
-#### Example:
+#### Example
 
 ```html
 <!DOCTYPE html>
@@ -1049,7 +1049,7 @@ A `Content-Type: application/json` header signals the server to interpret the bo
 2. **Style Layer:** CSS provides the look and feel.
 3. **Behavior Layer:** JavaScript adds interactivity and dynamic changes.
 
-#### Example:
+#### Example
 
 - HTML: Displays a button.
 - CSS: Makes the button blue with rounded edges.
@@ -1067,5 +1067,3 @@ GET for search queries; POST for form submissions.
 ### 14. What is the significance of `127.0.0.1` in HTTP testing?
 
 > 💡 **`127.0.0.1`** is the loopback address that points to the local machine. It is used for testing web servers and applications without requiring an external network.
-
-
