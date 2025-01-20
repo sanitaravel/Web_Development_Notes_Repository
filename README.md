@@ -26,11 +26,14 @@ The repository is organized as follows:
 │   CONTRIBUTING.md
 │   LICENSE
 │   README.md
-|
 ├───.github
-│
-└───Semester [number]
-    └─── [course_name]
+└───Semester 1
+    └───CS
+        └───part2
+            ├───Algorithms
+            │   ├───Search Algorithms
+            │   └───Sorting Algorithms
+            └───TypeScript
 ```
 
 ### Explanation of Folder Structure
