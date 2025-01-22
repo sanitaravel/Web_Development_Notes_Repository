@@ -66,9 +66,7 @@ Here’s how to use binary search in the guessing game:
 
 2. **Make a Guess:**  
    Guess the midpoint of `min` and `max`, calculated as:  
-   \[
-   \text{guess} = \left\lfloor \frac{\text{min} + \text{max}}{2} \right\rfloor
-   \]
+   $\text{guess} = \left\lfloor \frac{\text{min} + \text{max}}{2} \right\rfloor$
 
 3. **Check the Guess:**  
    - If the guess is correct, stop. You found the number!  
