@@ -33,6 +33,7 @@ The repository is organized as follows:
             ├───Algorithms
             │   ├───Search Algorithms
             │   └───Sorting Algorithms
+            ├───Data Structures
             └───TypeScript
 ```
 
