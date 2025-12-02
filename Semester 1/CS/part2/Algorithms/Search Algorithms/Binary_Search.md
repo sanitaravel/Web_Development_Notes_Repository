@@ -112,9 +112,7 @@ Binary search works by dividing the array into halves repeatedly until it finds 
    Start with `min = 0` and `max = 24`.  
 
 2. Guess the middle index:  
-   $
-   \text{guess} = \lfloor \frac{\text{min} + \text{max}}{2} \rfloor = \lfloor \frac{0 + 24}{2} \rfloor = 12
-   $
+   $`\text{guess} = \lfloor \frac{\text{min} + \text{max}}{2} \rfloor = \lfloor \frac{0 + 24}{2} \rfloor = 12`$
 
     Check `primes[12]` (which is 41).  
 
@@ -124,9 +122,7 @@ Binary search works by dividing the array into halves repeatedly until it finds 
    - `max` stays 24.
 
 4. Guess the new middle index:  
-   $
-   \text{guess} = \lfloor \frac{13 + 24}{2} \rfloor = 18
-   $
+   $`\text{guess} = \lfloor \frac{13 + 24}{2} \rfloor = 18`$
 
    Check `primes[18]` (which is 67).  
 
@@ -156,9 +152,7 @@ Here’s an updated version of the pseudocode:
 1. Set `min = 0` and `max = n - 1`.  
 2. If `max < min`, return `-1` (target not found).  
 3. Otherwise, calculate:  
-   $
-   \text{guess} = \lfloor \frac{\text{min} + \text{max}}{2} \rfloor
-   $
+   $`\text{guess} = \lfloor \frac{\text{min} + \text{max}}{2} \rfloor`$
 4. If `array[guess]` equals the target, return `guess`.  
 5. If `array[guess]` is less than the target, set `min = guess + 1`.  
 6. Otherwise, set `max = guess - 1`.  
